@@ -1,3 +1,8 @@
+// Copyright (c) 2023 KibaOfficial
+// 
+// This software is released under the MIT License.
+// https://opensource.org/licenses/MIT
+
 import 'package:flutter/material.dart';
 
 void main(){
