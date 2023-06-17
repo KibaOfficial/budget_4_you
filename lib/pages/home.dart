@@ -8,7 +8,6 @@ import 'package:budget_4_you/pages/add_transaction.dart';
 import 'package:fl_chart/fl_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:budget_4_you/static.dart' as stc;
-import 'package:hive_flutter/hive_flutter.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -91,7 +90,7 @@ class _HomePageState extends State<HomePage> {
         onPressed: () {
           Navigator.of(context).push(
             MaterialPageRoute(
-              builder: (context) => AddTransaction(),
+              builder: (context) => const AddTransaction(),
             ),
           ).whenComplete(() {
             setState(() {});

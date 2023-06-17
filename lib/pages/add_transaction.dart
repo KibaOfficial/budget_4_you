@@ -107,7 +107,9 @@ class _AddTransactionState extends State<AddTransaction> {
                   onChanged: (val){
                     try {
                       amount = int.parse(val);
-                    } catch (e) {}
+                    } catch (e) {
+                      return;
+                    }
                   },
                   keyboardType: TextInputType.number,
                   inputFormatters: [
@@ -302,8 +304,10 @@ class _AddTransactionState extends State<AddTransaction> {
                 if(amount != null && note.isNotEmpty) {
                   DB db = DB();
                   await db.addData(amount!, newDate, note, type);
+                  // ignore: use_build_context_synchronously
                   Navigator.of(context).pop();
                 } else {
+                  // ignore: avoid_print
                   print("missing values!");
                 }
               }, 

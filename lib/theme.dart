@@ -73,7 +73,7 @@ import 'package:flutter/material.dart';
 
 ThemeData myTheme = ThemeData(
   fontFamily: "customFont",
-  primaryColor: Color(0xff030357),
+  primaryColor: const Color(0xff030357),
   primarySwatch: primaryMaterialColor,
 );
   

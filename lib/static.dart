@@ -3,6 +3,8 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
+// ignore_for_file: constant_identifier_names
+
 import 'package:flutter/material.dart';
 
 const Color PrimaryColor = Color(0xff030357);
