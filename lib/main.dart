@@ -7,7 +7,6 @@ import 'package:budget_4_you/pages/home.dart';
 import 'package:budget_4_you/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
-import 'package:hive/hive.dart';
 
 void main() async {
   await Hive.initFlutter();
