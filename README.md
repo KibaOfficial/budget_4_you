@@ -11,7 +11,7 @@ Ein einfacher Budget Manager in Flutter, der Benutzern hilft, ihre finanziellen 
 
 ## Technologie
 
-Dieser Budget Manager wurde mit Flutter entwickelt und verwendet eine lokale Datenbank zur Speicherung der finanziellen Transaktionen. 
+Dieser Budget Manager wurde mit Flutter entwickelt und verwendet eine lokale Datenbank zur Speicherung der finanziellen Transaktionen.
 
 ## Installation
 
@@ -27,7 +27,8 @@ Füge hier Screenshots oder GIFs hinzu, die den Budget Manager in Aktion zeigen.
 
 ## Autoren
 
-- KibaOfficial - [GitHub-Profil](https://github.com/KibaOfficial)
+- KibaOfficial Lead Developer - [GitHub-Profil](https://github.com/KibaOfficial)
+- Emre Yurtseven Debugging & Testing - [Github-Profil](https://github.com/yurtemre7)
 
 ## Beitrag
 

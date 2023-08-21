@@ -3,7 +3,7 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-import 'package:budget_4_you/pages/home.dart';
+import 'package:budget_4_you/pages/splash.dart';
 import 'package:budget_4_you/theme.dart';
 import 'package:flutter/material.dart';
 import 'package:hive_flutter/hive_flutter.dart';
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Budget 4 You',
       theme: myTheme,
-      home: const HomePage(),
+      home: const Splash(),
     );
   }
 }

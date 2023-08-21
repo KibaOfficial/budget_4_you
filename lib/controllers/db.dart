@@ -4,9 +4,11 @@
 // https://opensource.org/licenses/MIT
 
 import 'package:hive/hive.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 class DB {
   late Box box;
+  late SharedPreferences preferences;
 
 
   DB () {
@@ -16,17 +18,22 @@ class DB {
   openBox(){
     box = Hive.box("Budget");
   }
+  Future delData(int index) async {
+    await box.deleteAt(index);
+  }
 
   Future addData(int amount, DateTime currentDate, String note, String type) async {
     var value = {'amount': amount, 'date': currentDate, 'type': type, 'note': note};
     box.add(value);
   }
 
-  Future<Map> fetch() {
-    if (box.values.isEmpty) {
-      return Future.value({});
-    } else {
-      return Future.value(box.toMap());
-    }
+  addname(String name) async {
+    preferences = await SharedPreferences.getInstance();
+    preferences.setString('name', name);
+  }
+
+  getName() async {
+    preferences = await SharedPreferences.getInstance();
+    return preferences.getString('name');
   }
 }
