@@ -3,7 +3,7 @@
 // This software is released under the MIT License.
 // https://opensource.org/licenses/MIT
 
-import 'package:budget_4_you/db.dart';
+import 'package:budget_4_you/controllers/db.dart';
 import 'package:flutter/material.dart';
 import 'package:budget_4_you/static.dart' as stc;
 import 'package:flutter/services.dart';
